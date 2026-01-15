@@ -193,7 +193,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Full Stack Web Developer Intern",
-    desc: "Developed responsive web apps using React, Bootstrap, and Tailwind CSS.\n•Improved UX for 25k* users by optimizing auth systems with MERN.\n•Collaborated on 6+ projects, delivering 98% of requirements efficiently",
+    desc: "Developed responsive web apps using React, Bootstrap, and Tailwind CSS.\n•Improved UX for users by optimizing auth systems with MERN.\n•Collaborated on 9+ projects, delivering 95% of requirements efficiently",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
