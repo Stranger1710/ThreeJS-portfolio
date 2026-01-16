@@ -193,16 +193,32 @@ export const workExperience = [
   {
     id: 1,
     title: "Full Stack Web Developer Intern",
-    desc: "Developed responsive web apps using React, Bootstrap, and Tailwind CSS.\n•Improved UX for users by optimizing auth systems with MERN.\n•Collaborated on 9+ projects, delivering 95% of requirements efficiently",
+    desc: "Developed responsive web apps using React, Bootstrap, and Tailwind CSS\nImproved UX for users by optimizing auth systems with MERN\nCollaborated on 9+ projects, delivering 95% of requirements efficiently",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
-    id: 2,
+    id: 4,
     title: "Secretary, AIT Radio club",
-    desc: "Organized National Level events like Radiance, RJ hunt, Vibes.",
+    desc: "• Organized National Level events like Radiance, RJ hunt, Vibes",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
+  },
+  {
+    id: 2,
+    title:
+      "Datacom Software Development Job Simulation on Forage - January 2026",
+    desc: "Completed a simulation focussed on how the software development team at Datacom approaches their work\nReviewed a web application and planned for future improvements\nIdentified the root cause of bugs and implemented a fix to improve the application",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 3,
+    title:
+      "SLloyds Banking Group Technology Engineering Job Simulation on Forage - January 2026",
+    desc: "Completed a job simulation involving technology engineering and user experience design for the Lloyds Banking Group Technology Team\nDeveloped and tested a mortgage calculator, utilising HTML, CSS, and JavaScript, and deployed the tool using Azure, enhancing technical skills in web development and cloud computing\nPresented project outcomes and received feedback, demonstrating proficiency in communication and adaptability while integrating user feedback to refine product features\nEmployed Git for version control, ensuring collaborative coding practices and maintaining a structured project workflow, which improved code management efficiency by 30%",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp4.svg",
   },
 ];
 
