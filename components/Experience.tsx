@@ -52,6 +52,16 @@ const Experience = () => {
                     ))}
                   </ul>
                 )}
+                {card.certificationLink && (
+                  <a
+                    href={card.certificationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 text-purple underline text-sm"
+                  >
+                    View Certification
+                  </a>
+                )}
               </div>
             </div>
           </Button>
