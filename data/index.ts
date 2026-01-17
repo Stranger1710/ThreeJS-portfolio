@@ -78,7 +78,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Here My Email.",
+    title: "Download My Resume.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
