@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning style={{ scrollbarGutter: "stable" }}>
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`} style={{ scrollPaddingTop: "100px" }}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
