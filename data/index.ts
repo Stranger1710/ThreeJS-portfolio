@@ -21,7 +21,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm good at Time management and Teamwork.",
+    title: "I'm very flexible with time zone communications",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",

@@ -1,10 +1,32 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const descText =
+    "Full Stack Developer (MERN Stack) building scalable, production-ready web applications with clean code, strong performance, and intuitive user experiences.";
+  const words = descText.split(" ");
+
+  const wordVariants = {
+    initial: { opacity: 0.5, scale: 1 },
+    hovered: {
+      opacity: 1,
+      scale: 1.1,
+      color: "rgb(96, 165, 250)",
+      transition: { duration: 0.2 },
+    },
+    normal: {
+      opacity: 0.7,
+      scale: 1,
+      color: "rgb(209, 213, 219)",
+      transition: { duration: 0.2 },
+    },
+  };
   return (
     <div className="pb-20 pt-36 relative">
       {/**
@@ -51,13 +73,28 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
-          <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <div className="relative inline-block w-full">
+            <TextGenerateEffect
+              words="Hi I'm Rupender"
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div>
+          </div>
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Rupender, a FullStack Developer.
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl cursor-pointer">
+            {words.map((word, idx) => (
+              <motion.span
+                key={idx}
+                variants={wordVariants}
+                initial="initial"
+                animate={hoveredIndex === idx ? "hovered" : "normal"}
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className="inline-block mr-[0.25em]"
+              >
+                {word}
+              </motion.span>
+            ))}
           </p>
 
           <a href="#about">
