@@ -81,7 +81,7 @@ const Hero = () => {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div>
           </div>
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl cursor-pointer">
+          <p className="text-center md:tracking-wider mb-4 mt-8 text-sm md:text-lg lg:text-2xl cursor-pointer">
             {words.map((word, idx) => (
               <motion.span
                 key={idx}
